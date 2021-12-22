@@ -80,6 +80,30 @@ int main(void) {
   	printf("The maximum value of SIGNED CHAR = %d\n", SCHAR_MAX);
     printf("The maximum value of UNSIGNED CHAR = %d\n", UCHAR_MAX);
 	
+	//////////////////
+	// Enums
+	/////////////////
+	
+	printf("An ennumeration, or enum, allows the definitions of a type that assign names, called enumerators, to integer values\n");
+	
+	enum week {
+		sun,
+		mon,
+		tue,
+		wed,
+		thu,
+		fri,
+		sat
+	};
+
+	enum cardinal_points {
+		north = 0,
+		east = 90,
+		south = 180,
+		west = 270
+	};
+
+	printf("Remember that enum types only store numbers, like: %d\n", east);
 
 	return 0;
 }
