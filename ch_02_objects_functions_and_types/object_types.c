@@ -105,5 +105,16 @@ int main(void) {
 
 	printf("Remember that enum types only store numbers, like: %d\n", east);
 
+	////////////////////////
+	// Floating-Point types
+	////////////////////////
+	
+	printf("There are three floating point types in C: floa, double and long double");
+	float real_number = 45.00;
+	double double_precision_real_number = 45.00;
+	long double really_big_real_number = 45.00;
+
+	printf("Printing some floating points: %f, %e, %Lf\n", real_number, double_precision_real_number, really_big_real_number);
+
 	return 0;
 }
