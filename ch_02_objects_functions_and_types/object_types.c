@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdint.h>
+#include <inttypes.h>
 #include <limits.h>
 #include <wchar.h>
 #include <stdlib.h>
@@ -68,6 +69,17 @@ int main(void) {
 	unsigned long long uns_long_long = 100000000;
 
 	printf("%u, %u, %u, %lu, %llu\n", us, us_small, uns_integer, uns_big, uns_long_long);
+
+	printf("The int type usally has the natural size sugest by the execution environment architecture, ie: 32 bits wide in a 32 bit machine\n");
+	printf("We are able to specify a particular width using types included with the stdint and inttypes headers.\n");
+	uint64_t sixty_fout_bit_integer = 64;
+	printf("%ld\n", sixty_fout_bit_integer);
+
+	printf("Given a execution environment the maximum and minimum integer values can be found using the <limits.h> header\n");
+	printf("The minimum value of SIGNED CHAR = %d\n", SCHAR_MIN);
+  	printf("The maximum value of SIGNED CHAR = %d\n", SCHAR_MAX);
+    printf("The maximum value of UNSIGNED CHAR = %d\n", UCHAR_MAX);
+	
 
 	return 0;
 }
