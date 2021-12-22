@@ -116,5 +116,13 @@ int main(void) {
 
 	printf("Printing some floating points: %f, %e, %Lf\n", real_number, double_precision_real_number, really_big_real_number);
 
+	//////////
+	// Void
+	//////////
+	
+	printf("The keyword void by itself means 'can't hold a value'. It is used to indicate that a function doesn't return a value, or as the sole parameter of a function to indicate that it doesn't take any arguments\n");
+
+	printf("However, the derived type void * means that a pointer can reference any object!\n");
+	
 	return 0;
 }
